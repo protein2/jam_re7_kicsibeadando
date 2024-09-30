@@ -25,7 +25,7 @@ def generate_launch_description():
             ]
         ),
         # Node(
-        #     package='ros2_cpp_template',
+        #     package='jam_re7_kicsibeadando',
         #     executable='simple_sub_node',
         #     output='screen',
         # ),
