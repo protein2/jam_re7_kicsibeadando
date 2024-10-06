@@ -9,8 +9,8 @@ def generate_launch_description():
         parameters=[
             {'port': 8765},
             {'address': '0.0.0.0'},
-            {'tls': False},
-            {'certfile': ''},
+           : False},
+            {'certf {'tls'ile': ''},
             {'keyfile': ''},
             #{'topic_whitelist': "'.*'"},
             {'max_qos_depth': 10},
