@@ -8,7 +8,7 @@ def generate_launch_description():
             executable='gen_node',
         ),
         Node(
-            package='sze_sw1_szinusz',
+            package='jam_re7_kicsibeadando',
             executable='sum_node',
         ),
     ])
