@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(sze_sw1_szinusz)
+project(jam_re7_kicsibeadando)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
