@@ -19,7 +19,7 @@ public:
         sub1_ = this->create_subscription<std_msgs::msg::Float32>("cosine", 10, std::bind(&SumData::cosine_callback, this, _1));
         sub2_ = this->create_subscription<std_msgs::msg::Float32>("rand", 10, std::bind(&SumData::rand_callback, this, _1));
         sub3_ = this->create_subscription<std_msgs::msg::Float32>("in", 10, std::bind(&SumData::in_callback, this, _1));
-        timer_ = this->create_wall_timer(50ms, std::bind(&SumData::timer_callback, this));
+        timer_ = this->create_wall_timer(20ms, std::bind(&SumData::timer_callback, this));
     }
 
 private:
