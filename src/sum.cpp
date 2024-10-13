@@ -48,7 +48,7 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr pub1_;
     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr sub1_, sub2_, sub3_;
-    double cosine_, rand_, in_;
+    double cosine_, rand_, in_, sum_;
     size_t count_;
 };
 
