@@ -1,8 +1,10 @@
 # `jam_re7_kicsibeadando` package
 ROS 2 C++ package.  [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
+A package két node-ból áll. A `/gen_node` koszínusz jelet és véletlen számokat genertál, amiket két `std_msgs/float32` topicban hirdet. A `/sum_node` a összegzi az előállott topicokat és egy újabb `std_msgs/float32` topicban hirdeti. Megvalósítás `ROS 2 Humble` alatt.
 ## Packages and build
 
 It is assumed that the workspace is `~/ros2_ws/`.
+
 
 ### Clone the packages
 ``` r
@@ -57,4 +59,4 @@ classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#152742
 classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
 ```
 
-![](/home/ajr/ros2_ws/src/jam_re7_kicsibeadando/img/ajr_foxglove_image.png)
+![](img/ajr_foxglove_image.png)
