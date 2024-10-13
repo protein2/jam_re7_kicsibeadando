@@ -24,8 +24,8 @@ private:
     {
         auto message_cos = std_msgs::msg::Float32();
         auto message_rand = std_msgs::msg::Float32();
-        message_cos.data = cos(count_++ / 50.0) * 100;
-        message_rand.data = rand() % 5;
+        message_cos.data = cos(count_++ / 50) * 100;
+        message_rand.data = rand() % 5; 
         pub_cos_->publish(message_cos);
         pub_rand_->publish(message_rand);
     }
