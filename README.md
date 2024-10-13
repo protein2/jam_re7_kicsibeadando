@@ -31,26 +31,30 @@ source ~/ros2_ws/install/setup.bash
 ``` r
 ros2 launch jam_re7_kicsibeadando launch_example1.launch.py
 ```
+``` r
+ros2 run jam_re7_kicsibeadando gen_node 
+```
 
-# Delete this part if you are using it as a template
+``` r
+ros2 run jam_re7_kicsibeadando sum_node 
+```
 
-ROS 2 pacage template, to get started, use template by clicking on the Green button labeled [`Use this template`](https://github.com/protein2/jam_re7_kicsibeadando/generate) / [`Create new repository`](https://github.com/protein2/jam_re7_kicsibeadando/generate). 
+## Graph
 
-<p align="center"><img src="img/use_this_template01.png" width="60%" /></p>
+``` mermaid
+graph LR;
 
+gen([ /gen_node]):::red --> sine
+gen --> rand[ /rand<br/>std_msgs/Float32]:::light 
+sine[ /sine<br/>std_msgs/Float32]:::light --> sum([ /sum_node]):::red
+sum --> out[ /out<br/>std_msgs/Float32]:::light 
+rand --> sum
+in[ /in<br/>std_msgs/Float32]:::light --> sum
 
-Let's assume 
-- your Github username is `mycoolusername`
-- your ROS 2 repo shold be `jam_re7_kicsibeadando`
+classDef light fill:#34aec5,stroke:#152742,stroke-width:2px,color:#152742  
+classDef dark fill:#152742,stroke:#34aec5,stroke-width:2px,color:#34aec5
+classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#152742
+classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
+```
 
-Replace everything in the cloned repo:
-
-- `jam_re7_kicsibeadando` >> `jam_re7_kicsibeadando` (the folder was already renamed after `Use this template`)
-- `protein2` >> `mycoolusername`
-- find all `todo` strings and fill the blanks
-
-The easiest way is VS code:
-
-<p align="center"><img src="img/replace01.png" width="60%" /></p>
-
-Now `colcon build` your ROS 2 package and you can start wokring.
+![](/home/ajr/ros2_ws/src/jam_re7_kicsibeadando/img/ajr_foxglove_image.png)
