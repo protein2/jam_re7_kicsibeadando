@@ -44,9 +44,9 @@ ros2 run jam_re7_kicsibeadando sum_node
 ``` mermaid
 graph LR;
 
-gen([ /gen_node]):::red --> sine
+gen([ /gen_node]):::red --> cosine
 gen --> rand[ /rand<br/>std_msgs/Float32]:::light 
-sine[ /sine<br/>std_msgs/Float32]:::light --> sum([ /sum_node]):::red
+cosine[ /cosine<br/>std_msgs/Float32]:::light --> sum([ /sum_node]):::red
 sum --> out[ /out<br/>std_msgs/Float32]:::light 
 rand --> sum
 in[ /in<br/>std_msgs/Float32]:::light --> sum
