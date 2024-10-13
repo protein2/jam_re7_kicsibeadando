@@ -41,11 +41,11 @@ ROS 2 pacage template, to get started, use template by clicking on the Green but
 
 Let's assume 
 - your Github username is `mycoolusername`
-- your ROS 2 repo shold be `cool_ros2_package`
+- your ROS 2 repo shold be `jam_re7_kicsibeadando`
 
 Replace everything in the cloned repo:
 
-- `jam_re7_kicsibeadando` >> `cool_ros2_package` (the folder was already renamed after `Use this template`)
+- `jam_re7_kicsibeadando` >> `jam_re7_kicsibeadando` (the folder was already renamed after `Use this template`)
 - `protein2` >> `mycoolusername`
 - find all `todo` strings and fill the blanks
 
