@@ -1,6 +1,7 @@
 # `jam_re7_kicsibeadando` package
 ROS 2 C++ package.  [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
-A package két node-ból áll. A `/gen_node` koszínusz jelet és véletlen számokat genertál, amiket két `std_msgs/float32` topicban hirdet. A `/sum_node` a összegzi az előállott topicokat és egy újabb `std_msgs/float32` topicban hirdeti. Megvalósítás `ROS 2 Humble` alatt.
+
+A package két node-ból áll. A `/gen_node` koszínusz jelet és korlátozottan véletlen számokat generál, amiket két `std_msgs/float32` topicban hirdet. A `/sum_node` a összegzi az előállított topicokat és egy újabb `std_msgs/float32` topicban hirdeti. Megvalósítás `ROS 2 Humble` alatt.
 ## Packages and build
 
 It is assumed that the workspace is `~/ros2_ws/`.
